@@ -20,7 +20,7 @@ async def entrypoint(ctx: JobContext):
             "Keep responses short and voice-friendly."
         )
     )
-
+# demo
     await ctx.say("Hello! How can I help you today?", allow_interruptions=True)
 
     async for audio in ctx.stream.speech(vad=vad, stt=stt):
